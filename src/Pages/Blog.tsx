@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Blog() {
   return (
     <div className='blog-container'>
-      <img className='headerImg' src='./headerImg2.jpg' alt="Header" />
+      <img className='headerImg' src='https://nehal276.github.io/nehals-project/headerImg2.jpg' alt="Header" />
       <div className='headerTitleLg'> 
         BLOG
       </div>
@@ -17,7 +17,7 @@ function Blog() {
           <Col>
             <div className='posts'>
               <Link to="/business-headshot">
-                <img className="post-image" src='./image1.png' alt="Business Headshot" />
+                <img className="post-image" src='https://nehal276.github.io/nehals-project/image1.png' alt="Business Headshot" />
               </Link>
             </div>
             <br/>
@@ -26,7 +26,7 @@ function Blog() {
           <Col>
             <div className='posts'>
               <Link to="/dramatic-shot">
-                <img className="post-image" src='./image2.png' alt="Dramatic Shot" />
+                <img className="post-image" src='https://nehal276.github.io/nehals-project/image2.png' alt="Dramatic Shot" />
               </Link>
             </div>
             <br/>
@@ -35,7 +35,7 @@ function Blog() {
           <Col>
             <div className='posts'>
               <Link to="/passion-image">
-                <img className="post-image" src='./image3.png' alt="Passion Image" />
+                <img className="post-image" src='https://nehal276.github.io/nehals-project/image3.png' alt="Passion Image" />
               </Link>
             </div>
             <br/>

@@ -9,7 +9,7 @@ function Resume() {
     <Container style={{ marginTop: '2rem' }}>
       <Row>
         <Col md={4}>
-        <img className="resume-headshot" src='./homepageheadshot.png' alt="resume-headshot" />
+        <img className="resume-headshot" src='https://nehal276.github.io/nehals-project/homepageheadshot.png' alt="resume-headshot" />
         <br/>
           <h4>Education</h4>
           <h5>University of Limerick-Ireland</h5>

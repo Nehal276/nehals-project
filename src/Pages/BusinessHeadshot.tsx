@@ -5,7 +5,7 @@ function BusinessHeadshot() {
         <div className="blog-page-container">
             <div className="bh-header">'Business-Type' Headshot</div>
             <div className="bh-content">
-                <img className='bh-headerImg' src='./corporateheadshot_1.png' alt="Header" />
+                <img className='bh-headerImg' src='https://nehal276.github.io/nehals-project/corporateheadshot_1.png' alt="Header" />
                 <p className="bh-description">
                     <h4> Date- 11th October,2024</h4>
                     <div> 
