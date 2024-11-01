@@ -28,6 +28,7 @@ function Topbar() {
             <Nav className="ms-auto">
               {/* Update Nav.Link to Link */}
               <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/About">About</Link>
               <Link className="nav-link" to="/Resume">Resume</Link>
               <Link className="nav-link" to="/Projects">Projects</Link>
               <Link className="nav-link" to="/Blog">Blog</Link>
