@@ -1,0 +1,76 @@
+html,body {
+  margin: 0;
+  padding: 0%;
+}
+.colouredbox {
+  background-color: #d3e4f1; /* Dark background color */
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column;
+  align-items: flex-start; /* Center items vertically */
+  justify-content: flex-start; /* Center items horizontally */
+  text-align: center; /* Center text */
+  width: 60vw;
+  padding: 1.5rem;
+  margin: 0px;
+  position: relative;
+  top: -2px;
+  min-height: 32vh;
+  box-sizing:border-box;
+}
+
+.resume-headshot {
+  width: 250px; 
+  height: 250px;
+  background-color: #e1e1e1; 
+  border-radius: 50%; 
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* To center the element */
+}
+
+h3 {
+  font-weight: 700 !important;
+  margin-bottom: 1.5rem;
+}
+
+h5 {
+  font-size:medium !important;
+  font-weight:bold !important;
+  margin-bottom: 0.5rem;
+}
+.line-space {
+  margin-bottom: 1rem;
+}
+
+.patent-project {
+  text-align: left;
+  font-weight:600;
+}
+
+li {
+  text-align: left;
+}
+
+.pub-align {
+  text-align: left ;
+}
+
+
+.skillset-box {
+  background-color: #011d3d; 
+  text-align: left; 
+  width: 99.47vw;
+  padding: 0px;
+  margin-left: -120px;
+  top: -5px;
+  min-height: 24vh; 
+}
+
+.footer {
+  background-color: #011d3d;
+  color: #fff ;
+  text-align: center !important;
+  padding: 10px 0;
+  position: relative; 
+  margin-top: 20px;
+}

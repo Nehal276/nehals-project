@@ -1,0 +1,43 @@
+.blog-container {
+    position: relative; 
+    height: 100vh;
+  }
+  
+  .headerImg {
+    padding-top: 100px;
+    width: 100%; 
+    height: auto;
+    filter: brightness(0.9);
+  }
+  
+  .headerTitleLg {
+    position: absolute; 
+    top: 14%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to truly center */
+    font-size: 100px; 
+    color: #011d3d; 
+    text-align: center; 
+  }
+  
+  .posts {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post-image{
+    width: 100%;
+    height: 360px;
+    object-fit:cover;
+    border-radius: 8px;
+  }
+
+  .post-image:hover {
+    filter: brightness(0.5); /* Increase brightness on hover */
+  }
+
+  .pic-header {
+    text-align: center;
+  }

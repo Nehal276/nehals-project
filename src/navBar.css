@@ -1,0 +1,30 @@
+.navbar-custom {
+  background-color: rgb(232, 232, 232);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand
+{
+  color: rgb(0, 0, 0);
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-item:hover {
+  color: #a344d5; /* Optional hover effect */
+}
+
+.navbar-custom .dropdown-item{
+  color: #a344d5;
+  font-size: small;
+}
+
+@media (max-width: 1440px) {
+  .navbar {
+    width: 100%; /* For screens smaller than 1440px, let the navbar take the full width */
+    padding: 0 20px; /* Add padding for a balanced look */
+  }
+}

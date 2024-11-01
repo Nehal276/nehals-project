@@ -1,0 +1,40 @@
+.blog-page-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.bh-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #011d3d;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+
+.bh-content {
+    display: flex; 
+    /* /to establish a flex container/ */
+    align-items: flex-start;
+}
+
+.bh-headerImg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px; 
+}
+
+.bh-description {
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+    margin-top: 0; 
+    flex: 1; 
+}
+
+

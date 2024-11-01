@@ -1,0 +1,43 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 87.6vh;
+    background-color: #f5f5f5;
+    padding: 0; 
+    margin: 0; 
+    color: #333;
+  }
+  
+  .contact-header {
+    font-size: large !important;
+    font-weight: bold !important;
+    padding: 20px;
+  }
+  
+  .contact-content {
+    flex: 1; 
+    padding: 20px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+ 
+  .footer {
+    background-color: #011d3d;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0; 
+    position: relative;
+  }
+
+  .contact-style {
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .connectid {
+    font-size: small;
+  }
+  

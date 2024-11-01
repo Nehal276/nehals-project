@@ -1,0 +1,119 @@
+
+.image-container {
+    background-color: #e1e1e1; 
+    display: flex; /* To center content */
+    flex-direction: column;
+    align-items: flex-start; /* Center items vertically */
+    justify-content: flex-start; /* Center items horizontally */
+    color: #011d3d; /* Text color */
+    height: 74vh; /* Full height of the viewport */
+    padding-top: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  
+  .centered-text {
+    z-index: 1; /* Ensure text is on top */
+    margin-top: 40px;
+    text-align: left;
+    width: 60%;
+    margin-left: 500px;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(90deg, #011d3d, #a344d5);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+  }
+  
+  .my-image-class {
+    width: 70%; /* Adjust the width as needed */
+    margin-top: -5px !important; /* To add space between the text and the image */
+    margin-left: 60px;
+  }
+  
+  .box-container {
+    background-color: #011d3d; /* Dark background color */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column;
+    align-items: flex-start; /* Center items vertically */
+    justify-content: flex-start; /* Center items horizontally */
+    text-align: center; /* Center text */
+    width: 98vw;
+    padding-left: 0%;
+    margin: 0px;
+    position: relative;
+    top: -5px;
+    min-height: 24.5vh;
+    box-sizing:border-box;
+  }
+  
+  
+  .heading {
+    font-weight:800 !important;
+    font-size:medium;
+    color: #a344d5;
+  }
+  
+  
+  .small-logo {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 5px; 
+    border-radius: 50%; 
+  }
+  
+  .location-text {
+    max-width: 150px; 
+    font-size: 14px !important; 
+    font-weight: lighter;
+    text-align: left; 
+    color: #ffffff; 
+    margin-top: 10px;
+  }
+  
+  .skill-set {
+    color: #ffffff;
+    font-weight: bold;
+    font-size:large;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 50px;
+  }
+  
+  .custom-carousel {
+    max-width: 120%;
+    height: 400px;
+    margin-top: 6px;
+  }
+  
+  .carousel-image-container {
+    height: 700px; 
+    width: 100%; 
+    filter: blur(5px);
+  }
+  
+  .scroller {
+    color: #ffffff;
+    margin-left: 1250px;
+    margin-top: 40px;
+  }
+  
+  .content-wrap {
+    min-height: calc(100vh - 50px); /* Adjust 50px based on footer height */
+  }
+  
+  .footer {
+    background-color: #011d3d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  h3,h6 {
+   color: #000000 !important;
+  }
+  

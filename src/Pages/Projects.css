@@ -1,0 +1,24 @@
+.project-header {
+  text-align: center;
+  font-weight: bold !important;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.project-image {
+  width: 1300px;
+  height: 360px;
+}
+
+.project-text {
+  padding-left: 140px;
+  padding-right: 90px;
+  padding-top: 20px;
+  font-size:medium;
+}
+
+.project-image2 {
+  width: 1280px;
+  height: 360px;
+}
+
