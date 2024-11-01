@@ -5,7 +5,7 @@ function DramaticShot() {
         <div className="blog-page-container">
             <div className="bh-header">Dramatic shot</div>
             <div className="bh-content">
-                <img className='bh-headerImg' src='./Dramaticshot_2.png' alt="Header" />
+                <img className='bh-headerImg' src= '/nehals-project/public/Dramaticshot_2.png' alt="Header" />
                 <p className="bh-description">
                     <h4> Date- 11th October,2024</h4>
                     <div> 
