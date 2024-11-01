@@ -14,7 +14,7 @@ function Home() {
       <Container fluid className="image-container">
         <Row className="align-items-center" style={{ width: '100%', margin: '0' }}>
           <Col md={4} style={{ padding: '0' }}>
-            <Image src="./public/homepageheadshot.png" fluid  className="my-image-class"/>
+            <Image src="https://nehal276.github.io/homepageheadshot.png" fluid  className="my-image-class"/>
           </Col>
           
           <Col md={8} style={{ paddingLeft: '1rem', paddingRight: '0' }}>
@@ -46,21 +46,21 @@ function Home() {
           </p>
           <Carousel className='custom-carousel'>
       <Carousel.Item>
-        <ExampleCarouselImage src="/carouselimage2.png" altText="First slide" />
+        <ExampleCarouselImage src="https://nehal276.github.io/carouselimage2.png" altText="First slide" />
         <Carousel.Caption>
           <h3>Pediatric Nebuliser</h3>
           <h6>User-friendly Ultrasonic Nebulizer</h6>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage src="/carouselimage1.png" altText="First slide" />
+        <ExampleCarouselImage src="https://nehal276.github.io/carouselimage1.png" altText="First slide" />
         <Carousel.Caption >
           <h3>A Vital Monitor</h3>
           <h6>Specialised for Gestational Diabetes</h6>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage src="/carouselimage3.png" altText="First slide" />
+        <ExampleCarouselImage src="https://nehal276.github.io/carouselimage3.png" altText="First slide" />
         <Carousel.Caption>
           <h3>Ease-Aid</h3>
           <h6>
@@ -69,7 +69,7 @@ function Home() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <ExampleCarouselImage src="/carouselimage4.png" altText="First slide" />
+        <ExampleCarouselImage src="https://nehal276.github.io/carouselimage4.png" altText="First slide" />
         <Carousel.Caption>
           <h3>App for Vital Monitor</h3>
           <h6>Connects patient to doctor and helps in regular consultations</h6>
