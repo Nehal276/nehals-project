@@ -4,6 +4,7 @@ function About() {
   return (
     <div className="about-container">
       <h1 className='about-header'>About Me</h1>
+      <img className='aboutimg' src='https://nehal276.github.io/nehals-project/passionimage_3.png' alt="Header" />
       <div className="contact-content">
         <h4 className='h4design'> What I think</h4>
         <p className='pdesign'> Embracing innovation, design has been my unwavering companion ever since I chose to embark on a career 
