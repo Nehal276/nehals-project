@@ -14,7 +14,7 @@ function Home() {
       <Container fluid className="image-container">
         <Row className="align-items-center" style={{ width: '100%', margin: '0' }}>
           <Col md={4} style={{ padding: '0' }}>
-            <Image src="/homepageheadshot.png" fluid  className="my-image-class"/>
+            <Image src="./public/homepageheadshot.png" fluid  className="my-image-class"/>
           </Col>
           
           <Col md={8} style={{ paddingLeft: '1rem', paddingRight: '0' }}>
