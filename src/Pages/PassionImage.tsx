@@ -5,7 +5,7 @@ function PassionImage() {
         <div className="blog-page-container">
             <div className="bh-header">Passion Image</div>
             <div className="bh-content">
-                <img className='bh-headerImg' src='./passion image_3.png' alt="Header" />
+                <img className='bh-headerImg' src='./passionimage_3.png' alt="Header" />
                 <p className="bh-description">
                     <h4> Date- 11th October,2024</h4>
                     <div> 
