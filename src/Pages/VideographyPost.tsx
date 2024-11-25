@@ -66,8 +66,7 @@ function VideographyPost() {
           <iframe 
             className="youtube-video" 
             src="https://www.youtube.com/embed/_vJaTqmc09s" 
-            title="YouTube video player" 
-            frameBorder="0" 
+            title="YouTube video player"  
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowFullScreen
           ></iframe>
