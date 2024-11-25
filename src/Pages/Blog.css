@@ -41,3 +41,16 @@
   .pic-header {
     text-align: center;
   }
+
+  .videography-post {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .video-cover {
+    width: 100%;
+    max-width: 500px; /* Optional: Set a max width */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -7,12 +7,16 @@ import { Link } from 'react-router-dom';
 function Blog() {
   return (
     <div className='blog-container'>
-      <img className='headerImg' src='https://nehal276.github.io/nehals-project/headerImg2.jpg' alt="Header" />
       <div className='headerTitleLg'> 
         BLOG
       </div>
 
       <Container>
+      <Row>
+          <div className='videography-post'>
+            <img className='video-cover' src='/videography-cover.png'></img>
+          </div>
+        </Row>
         <Row>
           <Col>
             <div className='posts'>
