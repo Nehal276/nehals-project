@@ -18,7 +18,7 @@ function Blog() {
           <h3 className='video-header'> Video Production</h3>
           <div className='videography-post'>
           <Link to="/videography-post">
-            <img className='video-cover' src='./videography-cover.png' alt="Video cover"></img>
+            <img className='video-cover' src='https://nehal276.github.io/nehals-project/videography-cover.png' alt="Video cover"></img>
             </Link>
           </div>
           </Col>
