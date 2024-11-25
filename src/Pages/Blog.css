@@ -11,17 +11,14 @@
   }
   
   .headerTitleLg {
-    position: absolute; 
-    top: 14%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust to truly center */
-    font-size: 100px; 
-    color: #011d3d; 
-    text-align: center; 
+    font-size: 60px; 
+    color: #000000; 
+    text-align: left; 
+    padding-left: 126px;
   }
   
   .posts {
-    padding-top: 60px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,13 +32,14 @@
   }
 
   .post-image:hover {
-    filter: brightness(0.5); /* Increase brightness on hover */
+    filter: brightness(0.5); /* Increases brightness on hover */
   }
 
   .pic-header {
     text-align: center;
   }
 
+<<<<<<< HEAD
   .videography-post {
     text-align: center;
     margin-top: 20px;
@@ -54,3 +52,24 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+=======
+ .video-cover {
+  width: 95%;
+  padding-left: 20px;
+  padding-top: 20px;
+ }
+
+ .video-header {
+  padding-left: 20px;
+ }
+
+ .photo-header {
+  padding-top: 40px;
+  padding-left: 20px;
+ }
+
+ .video-cover:hover {
+  filter: brightness(0.5);
+  transition: transform 40s ease-in-out !important;
+}
+>>>>>>> recovery-branch

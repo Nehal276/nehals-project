@@ -7,11 +7,12 @@
     justify-content: flex-start; /* Center items horizontally */
     color: #011d3d; /* Text color */
     height: 74vh; /* Full height of the viewport */
-    padding-top: 20px;
-    padding-left: 0%;
-    padding-right: 0%;
   }
   
+  .container-fluid{
+    padding-left: 0%;
+  }
+
   .centered-text {
     z-index: 1; /* Ensure text is on top */
     margin-top: 40px;
@@ -100,9 +101,10 @@
     margin-top: 40px;
   }
   
-  .content-wrap {
-    min-height: calc(100vh - 50px); /* Adjust 50px based on footer height */
-  }
+  /* .content-wrap {
+    min-height: calc(100vh - 50px);
+     Adjust 50px based on footer height
+  } */
   
   .footer {
     background-color: #011d3d;
