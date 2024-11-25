@@ -7,14 +7,21 @@ import { Link } from 'react-router-dom';
 function Blog() {
   return (
     <div className='blog-container'>
-      <img className='headerImg' src='https://nehal276.github.io/nehals-project/headerImg2.jpg' alt="Header" />
       <div className='headerTitleLg'> 
         BLOG
       </div>
-
+      <h5 className='vidpost-text1'>Video Production</h5>
+      <div>  
+      <Link to="/videography-post">
+      <img className='video-cover' src='https://nehal276.github.io/nehals-project/videography-cover.png'></img>
+      </Link>
+      </div>
+      <br />
       <Container>
         <Row>
+        <h5 className='vidpost-text2'>Photography Series</h5>
           <Col>
+          
             <div className='posts'>
               <Link to="/business-headshot">
                 <img className="post-image" src='https://nehal276.github.io/nehals-project/image1.png' alt="Business Headshot" />

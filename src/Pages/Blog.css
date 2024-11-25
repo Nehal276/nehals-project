@@ -14,7 +14,7 @@
     font-size: 60px; 
     color: #000000; 
     text-align: left; 
-    padding-left: 126px;
+    padding-left: 136px;
   }
   
   .posts {
@@ -39,37 +39,42 @@
     text-align: center;
   }
 
-<<<<<<< HEAD
   .videography-post {
     text-align: center;
     margin-top: 20px;
   }
   
+ 
+
   .video-cover {
-    width: 100%;
-    max-width: 500px; /* Optional: Set a max width */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 88%;
+    padding-left: 140px;
+    padding-top: 10px;
+   }
+  
+   .video-header {
+    padding-left: 20px;
+   }
+  
+   .photo-header {
+    padding-top: 40px;
+    padding-left: 20px;
+   }
+  
+   .video-cover:hover {
+    filter: brightness(0.5);
+    transition: transform 40s ease-in-out !important;
+  }
+
+  .vidpost-text1 {
+    padding-left: 142px;
+    padding-top: 20px;
+    font-size: large !important;
+  }
+
+  .vidpost-text2 {
+    padding-left: 50px !important;
+    font-size: large !important;
+    padding-top: 20px;
   }
   
-=======
- .video-cover {
-  width: 95%;
-  padding-left: 20px;
-  padding-top: 20px;
- }
-
- .video-header {
-  padding-left: 20px;
- }
-
- .photo-header {
-  padding-top: 40px;
-  padding-left: 20px;
- }
-
- .video-cover:hover {
-  filter: brightness(0.5);
-  transition: transform 40s ease-in-out !important;
-}
->>>>>>> recovery-branch
