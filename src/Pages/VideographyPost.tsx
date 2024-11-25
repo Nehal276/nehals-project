@@ -7,7 +7,7 @@ function VideographyPost() {
     <Container>
       <Row>
         <div className='videographyhead'>
-          <img className='video-head' src='./videography-header.png'></img>
+          <img className='video-head' src='https://nehal276.github.io/nehals-project/videography-header.png'></img>
         </div>
       </Row>
       <Row>
@@ -45,17 +45,17 @@ function VideographyPost() {
         </div>
         <div className="gallery-container">
       <div className="gallery-item">
-        <img src='./vidpost1.jpeg' alt='Vidpost1' />
+        <img src='https://nehal276.github.io/nehals-project/vidpost1.jpeg' alt='Vidpost1' />
         <div className="overlay">
         </div>
       </div>
       <div className="gallery-item">
-        <img src='./vidpost2.jpeg' alt='Vidpost2' />
+        <img src='https://nehal276.github.io/nehals-project/vidpost2.jpeg' alt='Vidpost2' />
         <div className="overlay">
         </div>
       </div>
       <div className="gallery-item">
-        <img className='vidpost3'src='./vidpost3.png' alt='Vidpost3' />
+        <img className='vidpost3'src='https://nehal276.github.io/nehals-project/vidpost3.png' alt='Vidpost3' />
         <div className="overlay">
         </div>
       </div>
