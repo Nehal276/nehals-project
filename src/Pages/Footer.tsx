@@ -12,6 +12,7 @@ function Footer() {
   return (
     <>
       {!isContact && (
+        // to avoid footer on contact page
         <Container fluid className="footer-content text-center text-light py-5">
           <Row className="align-items-center">
             

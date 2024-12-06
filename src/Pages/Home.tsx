@@ -7,6 +7,7 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub, FaBehance } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -49,7 +50,9 @@ function Home() {
           <a href='./Resume_24.pdf'>
           <Button className='cvbutton'variant="outline-dark" style={{ marginRight: '15px' }}>Download CV</Button>
           </a>
+          <Link to='/Contact'>
           <Button className='contact-button'variant="outline-dark">Contact</Button>
+          </Link>
         </div>
       </Col>
     </Row>

@@ -17,7 +17,8 @@ function Contact() {
        </Col>
        </Row> 
 
-       <Row>
+       <Row> 
+        {/* bootstrap form element */}
        <Col className="information-update"md={6}>
        <h6> 01. What's your name?</h6>
        <Form.Control size="lg" type="text" placeholder="Nehal Parab*" />

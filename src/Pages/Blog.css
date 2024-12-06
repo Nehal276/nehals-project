@@ -1,4 +1,3 @@
-/* Blog.css */
 .tabs-container {
   padding: 20px 0;
   background-color: #f4f4f4;
@@ -10,9 +9,9 @@
 }
 
 .card-title {
-  font-size: 22px; /* Change font size */
-  font-weight: bold; /* Change font weight */
-  color: #813F21; /* Change text color */
+  font-size: 22px; 
+  font-weight: bold; 
+  color: #813F21; 
 }
 
 

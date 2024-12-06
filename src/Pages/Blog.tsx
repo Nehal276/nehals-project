@@ -7,8 +7,8 @@ import { likeBlog, dislikeBlog } from '../Store/blogSlice';
 import './Blog.css';
 import '../index.css';
 
-type BlogCategory = 'photography-1' | 'photography-2' | 'photography-3';
-
+type BlogCategory = 'photography-1' | 'photography-2' | 'photography-3'; 
+// / redux elements/
 interface BlogCardData {
   id: BlogCategory;
   title: string;
@@ -33,6 +33,7 @@ const BlogCard: React.FC<{ blog: BlogCardData }> = ({ blog }) => {
 
   return (
     <Col xs={12} md={4} className="mb-4">
+      {/* bootstrap columns and cards */}
       <Card>
         <Card.Img variant="top" src={blog.imageUrl} />
         <Card.Body>

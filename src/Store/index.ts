@@ -3,7 +3,7 @@ import blogReducer from './blogSlice';
 
 export const store = configureStore({
   reducer: {
-    blog: blogReducer  // Ensure this matches the selector in your components
+    blog: blogReducer  
   }
 });
 

@@ -21,7 +21,7 @@ const galleryItems: GalleryItem[] = [
   { id: 5, title: "The Painted Walk", imageUrl: "./g4.jpg", description: "Aurora Borealis", likes: 0, dislikes: 0 },
   { id: 6, title: "Fields of Peace", imageUrl: "./g6.jpg", description: "Waterfall cascade", likes: 0, dislikes: 0 },
 ];
-
+// like and dislike mouse event
 const ImageActions: React.FC<{
   onLike: (e: React.MouseEvent) => void;
   onDislike: (e: React.MouseEvent) => void;
