@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Modal } from 'react-bootstrap';
 import { ThumbsUp, ThumbsDown } from 'lucide-react';
 import './Gallery.css';
@@ -14,54 +14,12 @@ interface GalleryItem {
 }
 
 const galleryItems: GalleryItem[] = [
-  {
-    id: 1,
-    title: "Stone Setinel",
-    imageUrl: "./g1.jpg",
-    description: "Majestic mountain peaks reaching into the clouds",
-    likes: 0,
-    dislikes: 0
-  },
-  {
-    id: 2,
-    title: "Stone Steps of Heritage",
-    imageUrl: "./g9.JPG",
-    description: "Beautiful sunset view over the ocean",
-    likes: 0,
-    dislikes: 0
-  },
-  {
-    id: 3,
-    title: "Echoes of Time",
-    imageUrl: "./g3.jpg",
-    description: "Serene path through a dense forest",
-    likes: 0,
-    dislikes: 0
-  },
-  {
-    id: 4,
-    title: "Tales on Wheel",
-    imageUrl: "./g8.WEBP",
-    description: "Rolling sand dunes in the desert",
-    likes: 0,
-    dislikes: 0
-  },
-  {
-    id: 5,
-    title: "The Painted Walk",
-    imageUrl: "./g4.jpg",
-    description: "Aurora Borealis lighting up the night sky",
-    likes: 0,
-    dislikes: 0
-  },
-  {
-    id: 6,
-    title: "Fields of Peace",
-    imageUrl: "./g6.jpg",
-    description: "Powerful waterfall cascading down rocks",
-    likes: 0,
-    dislikes: 0
-  }
+  { id: 1, title: "Stone Setinel", imageUrl: "./g1.jpg", description: "Majestic mountain peaks", likes: 0, dislikes: 0 },
+  { id: 2, title: "Stone Steps of Heritage", imageUrl: "./g9.JPG", description: "Beautiful sunset view", likes: 0, dislikes: 0 },
+  { id: 3, title: "Echoes of Time", imageUrl: "./g3.jpg", description: "Serene forest path", likes: 0, dislikes: 0 },
+  { id: 4, title: "Tales on Wheel", imageUrl: "./g8.WEBP", description: "Rolling desert dunes", likes: 0, dislikes: 0 },
+  { id: 5, title: "The Painted Walk", imageUrl: "./g4.jpg", description: "Aurora Borealis", likes: 0, dislikes: 0 },
+  { id: 6, title: "Fields of Peace", imageUrl: "./g6.jpg", description: "Waterfall cascade", likes: 0, dislikes: 0 },
 ];
 
 const ImageActions: React.FC<{
@@ -90,27 +48,34 @@ function Gallery() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
+
   const handleShow = (item: GalleryItem) => {
     setSelectedImage(item);
     setShow(true);
   };
 
   const handleLike = (id: number) => {
-    setItems(items.map(item =>
-      item.id === id ? { ...item, likes: item.likes + 1 } : item
-    ));
+    setItems(prevItems =>
+      prevItems.map(item =>
+        item.id === id ? { ...item, likes: item.likes + 1 } : item
+      )
+    );
   };
 
   const handleDislike = (id: number) => {
-    setItems(items.map(item =>
-      item.id === id ? { ...item, dislikes: item.dislikes + 1 } : item
-    ));
+    setItems(prevItems =>
+      prevItems.map(item =>
+        item.id === id ? { ...item, dislikes: item.dislikes + 1 } : item
+      )
+    );
   };
 
-  const handleActionClick = (e: React.MouseEvent, action: () => void) => {
-    e.stopPropagation();
-    action();
-  };
+  useEffect(() => {
+    if (selectedImage) {
+      const updatedImage = items.find(item => item.id === selectedImage.id);
+      setSelectedImage(updatedImage || null);
+    }
+  }, [items]);
 
   return (
     <Container>
@@ -125,11 +90,25 @@ function Gallery() {
           <Col key={item.id}>
             <Card className="gallery-card h-100" onClick={() => handleShow(item)}>
               <div>
-                <Card.Img variant="top" src={item.imageUrl} className="gallery-image" />
+                <Card.Img
+                  variant="top"
+                  src={item.imageUrl}
+                  className="gallery-image"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src =
+                      "https://via.placeholder.com/300?text=Image+Unavailable";
+                  }}
+                />
                 <div className="image-overlay">
                   <ImageActions
-                    onLike={(e) => handleActionClick(e, () => handleLike(item.id))}
-                    onDislike={(e) => handleActionClick(e, () => handleDislike(item.id))}
+                    onLike={(e) => {
+                      e.stopPropagation();
+                      handleLike(item.id);
+                    }}
+                    onDislike={(e) => {
+                      e.stopPropagation();
+                      handleDislike(item.id);
+                    }}
                     likes={item.likes}
                     dislikes={item.dislikes}
                   />
@@ -139,29 +118,31 @@ function Gallery() {
                 <Card.Title>{item.title}</Card.Title>
               </Card.Body>
             </Card>
-            
           </Col>
         ))}
       </Row>
-      <br/>
-      <br/>
 
       <div>
-      <h4>Videos</h4>
-      <p>Product Showcase</p>
+        <br/>
+        <br/>
+        <h4>Videos</h4>
+        <p>Product Showcase</p>
       </div>
-      {/* Video player with cover image */}
       <div className="video-container" style={{ maxWidth: '80%', margin: '0 auto' }}>
-          <video
-            controls
-            className="img-fluid"
-            style={{ width: '100%', height: 'auto' }}
-            poster="./videography-cover.png" // Cover image
-          >
-            <source src={video} type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        <video
+          controls
+          className="img-fluid"
+          style={{ width: '100%', height: 'auto' }}
+          poster="./videography-cover.png"
+        >
+          <source src={video} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      </div>
 
       <Modal show={show} onHide={handleClose} size="lg" centered>
         {selectedImage && (
@@ -170,11 +151,22 @@ function Gallery() {
               <Modal.Title>{selectedImage.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img src={selectedImage.imageUrl} alt={selectedImage.title} className="modal-image" />
+              <img
+                src={selectedImage.imageUrl}
+                alt={selectedImage.title}
+                className="modal-image"
+                style={{ width: '100%' }}
+              />
               <div className="modal-actions">
                 <ImageActions
-                  onLike={(e) => handleActionClick(e, () => handleLike(selectedImage.id))}
-                  onDislike={(e) => handleActionClick(e, () => handleDislike(selectedImage.id))}
+                  onLike={(e) => {
+                    e.stopPropagation();
+                    handleLike(selectedImage.id);
+                  }}
+                  onDislike={(e) => {
+                    e.stopPropagation();
+                    handleDislike(selectedImage.id);
+                  }}
                   likes={selectedImage.likes}
                   dislikes={selectedImage.dislikes}
                 />

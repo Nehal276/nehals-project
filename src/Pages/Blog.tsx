@@ -7,7 +7,7 @@ import { likeBlog, dislikeBlog } from '../Store/blogSlice';
 import './Blog.css';
 import '../index.css';
 
-type BlogCategory = 'photography' | 'videography';
+type BlogCategory = 'photography-1' | 'photography-2' | 'photography-3';
 
 interface BlogCardData {
   id: BlogCategory;
@@ -31,15 +31,13 @@ const BlogCard: React.FC<{ blog: BlogCardData }> = ({ blog }) => {
     dispatch(dislikeBlog(blog.id as BlogCategory));
   };
 
-
   return (
-    
     <Col xs={12} md={4} className="mb-4">
       <Card>
         <Card.Img variant="top" src={blog.imageUrl} />
         <Card.Body>
           <Card.Title>{blog.title}</Card.Title>
-          <p style={{color:'#A35A324A',fontSize:'14px'}}>Author : Chidanand</p>
+          <p style={{color:'#A35A324A',fontSize:'14px'}}>Author : Nehal Parab</p>
           <Card.Text>{blog.description}</Card.Text>
           <div className="d-flex justify-content-between align-items-center">
             <Link to={blog.path}>
@@ -73,21 +71,21 @@ const BlogCard: React.FC<{ blog: BlogCardData }> = ({ blog }) => {
 export default function Blog() {
   const blogs: BlogCardData[] = [
     { 
-      id: 'photography', 
-      title: "Photography Assignment", 
-      description: "A fun activity where we had to capture three well composed images on a given topic.", 
+      id: 'photography-1', 
+      title: "Photography Assignment 1", 
+      description: "A fun activity where we had to capture three well-composed images on a given topic.", 
       imageUrl: './image1.png',
       path: "/business-headshot"
     },
     { 
-      id: 'photography', 
-      title: "Photography Assignment", 
-      description: "A fun activity where we had to capture three well composed images on a given topic.", 
+      id: 'photography-2', 
+      title: "Photography Assignment 2", 
+      description: "A fun activity where we had to capture three well-composed images on a different topic.", 
       imageUrl: './image2.png',
       path: "/dramatic-shot"
     },
     { 
-      id: 'videography', 
+      id: 'photography-3', 
       title: "Videography Assignment", 
       description: "A fun activity where we had to conceptualize and produce a small product video as a team.", 
       imageUrl: './image3.png',
@@ -98,18 +96,18 @@ export default function Blog() {
   return (
     <Container fluid className="tabs-container">
       <Container>
-        <h1 className="my-3">Blogs</h1>
+        <h1 className="my-3">Blog</h1>
         <Row>
-        <div className="videography-series">
-        <h5 className="vidpost-text1">Video Production</h5>
-        <Link to="/videography-post">
-          <img 
-            className="video-cover" 
-            src="https://nehal276.github.io/nehals-project/videography-cover.png" 
-            alt="Video Production" 
-          />
-        </Link>
-      </div>
+          <div className="videography-series">
+            <h5 className="vidpost-text1">Video Production</h5>
+            <Link to="/videography-post">
+              <img 
+                className="video-cover" 
+                src="https://nehal276.github.io/nehals-project/videography-cover.png" 
+                alt="Video Production" 
+              />
+            </Link>
+          </div>
         </Row>
         <br/>
         <br/>
@@ -125,5 +123,5 @@ export default function Blog() {
         </Row>
       </Container>
     </Container>
-  );
+  );  
 }
