@@ -1,0 +1,109 @@
+.gallery-heading {
+    align-items: center;
+    font-weight: bold;
+    padding: 4rem;
+}
+.gallery-container {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .gallery-card {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-card:hover {
+    transform: translateY(-5px);
+  }
+  
+
+  
+  .gallery-image {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .image-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .action-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #2c3e50;
+    transition: transform 0.2s ease;
+  }
+  
+  .action-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .like-button:hover {
+    background: #e3f2fd;
+    color: #2196f3;
+  }
+  
+  .dislike-button:hover {
+    background: #fce4ec;
+    color: #f50057;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .card-title {
+    color: #34495e;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  
+  .card-text {
+    color: #7f8c8d;
+  }
+  
+  .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .modal-title {
+    color: #2c3e50;
+    font-weight: bold;
+  }

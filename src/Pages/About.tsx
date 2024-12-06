@@ -1,26 +1,92 @@
 import './About.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 function About() {
   return (
-    <div className="about-container">
-      <h1 className='about-header'>About Me</h1>
-      <img className='aboutimg' src='https://nehal276.github.io/nehals-project/passionimage_3.png' alt="Header" />
-      <div className="contact-content">
-        <h4 className='h4design'> What I think</h4>
-        <p className='pdesign'> Embracing innovation, design has been my unwavering companion ever since I chose to embark on a career 
-            in Product Design. I believe that design stands as a paramount catalyst for shaping a better future. What truly 
-            excites me about being a designer is its boundless applicability across diverse sectors; from the realms of toy 
-            industries to the critical landscapes of medical design, the versatility of design knows no bounds. </p>
-        <h4 className='h4design'> My Personal Journey</h4>
-        <p className='pdesign'> My journey of design has been fueled by an urge to create positive change through the medium of design across various
-            feilds. I have always been inetrested in merging functionality and design which has got me this far and I aspire to do 
-            much more. My main goal is to make a meaningful impact through whatever facilities I have, within my community. </p>
-       </div>
-       {/* Footer section placed outside Container */}
-    <div className="footer">
-        <p>&copy; {new Date().getFullYear()} Nehal Parab. All Rights Reserved.</p>
-      </div>
+    <div>
+    <Container>
+      <Col>
+    <div>
+      <h2 className='about-head1'> What drew me to the world of Product and Experience Design</h2>
     </div>
+
+    <div className='line-button-gif'>
+        <button className='circle-ani'>
+        <div className='animated-circle'>
+            <span className='line'></span>
+            <span className='circle2'>
+            <img src="./bulb.png" alt="bulb" />
+            </span>
+          </div>
+        </button>
+    </div>
+    </Col>
+
+    <Col>
+    <p className='head1-description'>Design, for me, is a powerful tool to solve real problems and enhance everyday life. <br/>
+      I’ve always been drawn to the interplay of creativity and functionality—crafting products <br/>
+       that serve a purpose and designing experiences that feel seamless and intuitive.<br/>
+      What excites me most is the chance to merge empathy with innovation, whether through <br/>
+      creating tangible solutions or bridging the gap between technology and people. For me, <br/> 
+      design isn’t just about aesthetics; it’s about impact, purpose, and making life better, <br/>
+      one thoughtful creation at a time.</p></Col>
+      {/* Row with Text and Image */}
+      <Row>
+        {/* Text Column */}
+        <Col md={6} className='d-flex align-items-top'>
+          <div>
+            <h3 className='about-head2'>My Design Philosophy</h3>
+            <p className='head2-description'>
+              My work is grounded in empathy and purpose. I believe that great design starts with
+              understanding users' needs and aspirations, translating them into meaningful, functional solutions.
+            </p>
+          </div>
+        </Col>
+
+        {/* Image Column */}
+        <Col md={6} className='d-flex justify-content-center'>
+          <img
+            src="./passionimage_3.png"
+            alt="Design illustration"
+            className='design-image'
+          />
+        </Col>
+      </Row>
+    </Container>
+
+<Container className="help-container">
+<div>
+  <h4 className="help-mainheading">What I Can Help You With</h4>
+</div>
+<Row className="my-4">
+  {/* First Row */}
+  <Col md={4} className="d-flex flex-column align-items-center">
+    <h5 className="help-heading">Design Development</h5>
+    <p className="help-description">
+      Solving problems with a structured, user-centered approach to drive innovation.
+    </p>
+  </Col>
+  <Col md={4} className="d-flex flex-column align-items-center">
+    <h5 className="help-heading">Prototyping</h5>
+    <p className="help-description">
+      Crafting intuitive user interfaces and seamless experiences.
+    </p>
+  </Col>
+  <Col md={4} className="d-flex flex-column align-items-center">
+    <h5 className="help-heading">Marketing</h5>
+    <p className="help-description">
+      Creating physical products with functionality and aesthetics in mind.
+    </p>
+  </Col>
+</Row>
+</Container>
+</div>
+
+    
+    
   );
 }
 

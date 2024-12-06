@@ -1,24 +1,107 @@
-.project-header {
-  text-align: center;
-  font-weight: bold !important;
-  font-size: 50px;
-  padding: 10px;
+/* General Container */
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.design-heading {
+  font-weight: bold;
+}
+
+/* Category Controls */
+.category-controls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.category-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.category-button.active {
+  background-color: #4d0d86;
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(6, 0, 0, 0.2);
+}
+
+
+
+/* Project Cards Container */
+.project-cards {
+  display: grid;
+  gap: 20px;
+  row-gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
 }
 
 .project-image {
-  width: 1300px;
-  height: 360px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
 }
 
-.project-text {
-  padding-left: 140px;
-  padding-right: 90px;
-  padding-top: 20px;
-  font-size:medium;
+.project-card-content {
+  padding: 20px;
 }
 
-.project-image2 {
-  width: 1280px;
-  height: 360px;
+.project-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-description {
+  margin-top: 10px;
+  color: #555;
+}
+
+.project-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #1e3295;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #739bd3;
 }
 

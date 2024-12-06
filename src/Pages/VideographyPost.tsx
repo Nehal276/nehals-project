@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import { Row, Col } from 'react-bootstrap';
 import './VideographyPost.css'
+import video from'../assets/Product-Demo-Video.webm';
 
 function VideographyPost() {
   return (
@@ -43,33 +44,44 @@ function VideographyPost() {
              throughout. The final result was a story of a bag that is adaptable to all the different activities throughout the day. 
              </p>
         </div>
-        <div className="gallery-container">
-      <div className="gallery-item">
+        </Row>
+        <Row>
+          <Col className='img-fluid'> 
+          <div className="gallery-item">
         <img src='https://nehal276.github.io/nehals-project/vidpost1.jpeg' alt='Vidpost1' />
         <div className="overlay">
         </div>
-      </div>
-      <div className="gallery-item">
-        <img src='https://nehal276.github.io/nehals-project/vidpost2.jpeg' alt='Vidpost2' />
+        </div>
+          </Col>
+          <Col className='img-fluid'> 
+          <div className="gallery-item">
+        <img src='https://nehal276.github.io/nehals-project/vidpost2.jpeg' alt='Vidpost1' />
         <div className="overlay">
         </div>
-      </div>
-      <div className="gallery-item">
-        <img className='vidpost3'src='https://nehal276.github.io/nehals-project/vidpost3.png' alt='Vidpost3' />
+        </div>
+          </Col>
+          <Col className='img-fluid'> 
+          <div className="gallery-item">
+        <img src='https://nehal276.github.io/nehals-project/vidpost3.png' alt='Vidpost1' />
         <div className="overlay">
         </div>
-      </div>
-    </div>
-      </Row>
+        </div>
+          </Col>
+        </Row>
+        
+    
+      
       <Row>
       <div className="video-box">
-          <iframe 
-            className="youtube-video" 
-            src="https://www.youtube.com/embed/_vJaTqmc09s" 
-            title="YouTube video player"  
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen
-          ></iframe>
+      <video
+            controls
+            className="img-fluid"
+            style={{ width: '100%', height: 'auto' }}
+            poster="./videography-cover.png" // Cover image
+          >
+            <source src={video} type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         
       </Row>

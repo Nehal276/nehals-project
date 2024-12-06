@@ -5,4 +5,27 @@ html,body {
   margin: 0; /* Reset margin */
 }
 
+* {
+  cursor: none;
+}
 
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(166, 120, 235);
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(166, 120, 235);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.2s, height 0.2s;
+}

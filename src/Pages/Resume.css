@@ -3,7 +3,7 @@ html,body {
   padding: 0%;
 }
 .colouredbox {
-  background-color: #d3e4f1; /* Dark background color */
+  background-color: rgba(166, 67, 237, 0.1); /* Dark background color */
   display: flex; /* Use flexbox to center content */
   flex-direction: column;
   align-items: flex-start; /* Center items vertically */

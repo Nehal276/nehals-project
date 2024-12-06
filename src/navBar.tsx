@@ -1,4 +1,4 @@
-import reactLogo from'./assets/UL-logo-300x144.png';
+import reactLogo from'./assets/UL-Logo-Dark.png';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
@@ -31,6 +31,7 @@ function Topbar() {
               <Link className="nav-link" to="/About">About</Link>
               <Link className="nav-link" to="/Resume">Resume</Link>
               <Link className="nav-link" to="/Projects">Projects</Link>
+              <Link className="nav-link" to="/Gallery">Gallery</Link>
               <Link className="nav-link" to="/Blog">Blog</Link>
               <Link className="nav-link" to="/Contact">Contact</Link>
             </Nav>

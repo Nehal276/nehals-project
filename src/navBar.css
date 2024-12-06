@@ -1,5 +1,5 @@
 .navbar-custom {
-  background-color: rgb(232, 232, 232);
+  background-color: transparent !important;
   color: white;
   position: sticky;
   top: 0;

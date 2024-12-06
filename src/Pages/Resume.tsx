@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./Resume.css";
+import Button from 'react-bootstrap/Button';
 
 function Resume() {
   return (
@@ -96,11 +97,8 @@ function Resume() {
 
       </Row>
     </Container>
-    
-    {/* Footer section placed outside Container */}
-    <div className="footer">
-        <p>&copy; {new Date().getFullYear()} Nehal Parab. All Rights Reserved.</p>
-      </div>
+    <br/>
+    <br/>
     </>
     
   );
