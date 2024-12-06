@@ -72,13 +72,13 @@ function About() {
   <Col md={4} className="d-flex flex-column align-items-center">
     <h5 className="help-heading">Prototyping</h5>
     <p className="help-description">
-      Crafting intuitive user interfaces and seamless experiences.
+      Crafting interactive models for efficient understanding
     </p>
   </Col>
   <Col md={4} className="d-flex flex-column align-items-center">
     <h5 className="help-heading">Marketing</h5>
     <p className="help-description">
-      Creating physical products with functionality and aesthetics in mind.
+      Pitching the product to the target audience
     </p>
   </Col>
 </Row>

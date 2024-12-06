@@ -74,21 +74,21 @@ export default function Blog() {
     { 
       id: 'photography-1', 
       title: "Photography Assignment 1", 
-      description: "A fun activity where we had to capture three well-composed images on a given topic.", 
+      description: "Capturing headshot in a closed lighting environment", 
       imageUrl: './image1.png',
       path: "/business-headshot"
     },
     { 
       id: 'photography-2', 
       title: "Photography Assignment 2", 
-      description: "A fun activity where we had to capture three well-composed images on a different topic.", 
+      description: "Experimenting with dark environments and daily objects", 
       imageUrl: './image2.png',
       path: "/dramatic-shot"
     },
     { 
       id: 'photography-3', 
       title: "Videography Assignment", 
-      description: "A fun activity where we had to conceptualize and produce a small product video as a team.", 
+      description: "Outdoor photography with unique camera angles", 
       imageUrl: './image3.png',
       path: "/passion-image"
     }

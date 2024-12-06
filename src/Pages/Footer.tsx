@@ -45,7 +45,7 @@ function Footer() {
           </Row>
           <Row className="social-links mt-4">
             <Col>
-              <a href="https://www.awwwards.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/?lang=en" target="_blank" rel="noopener noreferrer">
                 Twitter
               </a>
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
